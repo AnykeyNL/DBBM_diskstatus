@@ -1,0 +1,705 @@
+DISKSTATUS INFORMATION
+ 
+
+DbSystem Information                                            
+---------------------------------------------------------------- 
+                     ID: 5fdde9fe-ed74-4409-92a2-ca8e46ae51fe
+               Platform: BmIaaSSi
+        Data Disk Count: 8
+         CPU Core Count: 8
+                Created: April 13, 2020 4:49:23 PM UTC
+
+System Information                                                
+---------------------------------------------------------------- 
+                   Name: npwdzekq
+            Domain Name: esxnet.masternet.oraclevcn.com
+              Time Zone: UTC
+             DB Edition: EeHp
+            DNS Servers: 
+            NTP Servers: 169.254.169.254 
+
+Disk Group Information
+---------------------------------------------------------------- 
+DG Name                   Redundancy                Percentage  
+------------------------- ------------------------- ------------ 
+Data                      High                      80         
+Reco                      High                      20         
+
+=========== [ DBSTORAGE INFO ] ===========
+
+ID                                       Type   DBUnique Name        Status    
+---------------------------------------- ------ -------------------- ----------
+3dd577b5-aec3-4041-b32f-e018dc043c33     Asm    DB0413_fra1xq        Configured
+ 
+Database Storage details                                          
+---------------------------------------------------------------- 
+                     ID: 3dd577b5-aec3-4041-b32f-e018dc043c33
+                DB Name: DB0413
+          DBUnique Name: DB0413_fra1xq
+         DB Resource ID: e722077c-082e-4456-b021-c652ce8377df
+           Storage Type: ASM
+                   DATA:
+                         Location: +DATA/DB0413_fra1xq
+                       Used Space: 3.05GB
+                       Free Space: 12.41TB
+                   REDO:
+                         Location: +RECO/DB0413_fra1xq
+                       Used Space: 12.40GB
+                       Free Space: 3.09TB
+                   RECO:
+                         Location: +RECO/DB0413_fra1xq
+                       Used Space: 12.40GB
+                       Free Space: 3.09TB
+                  State: ResourceState(status=Configured)
+                Created: April 13, 2020 4:49:23 PM UTC
+            UpdatedTime: April 13, 2020 5:15:29 PM UTC
+=========== [ DISK INFO ] ===========
+        NAME            PATH            TYPE            STATE           STATE_DETAILS
+ 
+        pd_00           /dev/nvme0n1    NVD             ONLINE          Good           
+        pd_01           /dev/nvme2n1    NVD             ONLINE          Good           
+        pd_02           /dev/nvme6n1    NVD             ONLINE          Good           
+        pd_03           /dev/nvme8n1    NVD             ONLINE          Good           
+        pd_04           /dev/nvme1n1    NVD             ONLINE          Good           
+        pd_05           /dev/nvme3n1    NVD             ONLINE          Good           
+        pd_06           /dev/nvme7n1    NVD             ONLINE          Good           
+        pd_07           /dev/nvme5n1    NVD             ONLINE          Good           
+ 
+        ASM_DISK        PATH                                            DISK            STATE           STATE_DETAILS
+ 
+        data_00         /dev/NVD_S00_PHLE739400E0p1                     pd_00           ONLINE          Good           
+        data_01         /dev/NVD_S01_PHLE738600CWp1                     pd_01           ONLINE          Good           
+        data_02         /dev/NVD_S02_PHLE74020062p1                     pd_02           ONLINE          Good           
+        data_03         /dev/NVD_S03_PHLE738600D7p1                     pd_03           ONLINE          Good           
+        data_04         /dev/NVD_S04_PHLE738600E3p1                     pd_04           ONLINE          Good           
+        data_05         /dev/NVD_S05_PHLE7394005Np1                     pd_05           ONLINE          Good           
+        data_06         /dev/NVD_S06_PHLE7394008Ap1                     pd_06           ONLINE          Good           
+        data_07         /dev/NVD_S07_PHLE73940086p1                     pd_07           ONLINE          Good           
+ 
+        ASM_DISK        PATH                                            DISK            STATE           STATE_DETAILS
+ 
+        reco_00         /dev/NVD_S00_PHLE739400E0p2                     pd_00           ONLINE          Good           
+        reco_01         /dev/NVD_S01_PHLE738600CWp2                     pd_01           ONLINE          Good           
+        reco_02         /dev/NVD_S02_PHLE74020062p2                     pd_02           ONLINE          Good           
+        reco_03         /dev/NVD_S03_PHLE738600D7p2                     pd_03           ONLINE          Good           
+        reco_04         /dev/NVD_S04_PHLE738600E3p2                     pd_04           ONLINE          Good           
+        reco_05         /dev/NVD_S05_PHLE7394005Np2                     pd_05           ONLINE          Good           
+        reco_06         /dev/NVD_S06_PHLE7394008Ap2                     pd_06           ONLINE          Good           
+        reco_07         /dev/NVD_S07_PHLE73940086p2                     pd_07           ONLINE          Good           
+ 
+=========== [ DISK: pd_00 ] ===========
+The Resource is : pd_00
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme0n1   
+        AsmDiskList     :       |data_00||reco_00|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       0              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       27             
+        HbaPortNum      :       900            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme0n1| 
+        Name            :       pd_00          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Invalid        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE739400E06P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       0              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       24             
+        State           :       Online         
+        StateChangeTs   :       1586798015     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S00_PHLE739400E0
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 24
+Available Spare (in %)                                    : 100
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 55906889
+Data Units Written (in 512k byte data unit)               : 6592272
+Number of Host Read Commands                              : 1002720355
+Number of Host Write Commands                             : 92132267
+Controller Busy Time (in minutes)                         : 240
+Number of Power Cycles                                    : 685
+Number of Power On Hours                                  : 5792
+Number of Unsafe Shutdowns                                : 670
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ DISK: pd_01 ] ===========
+The Resource is : pd_01
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme2n1   
+        AsmDiskList     :       |data_01||reco_01|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       1              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       62             
+        HbaPortNum      :       801            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme2n1| 
+        Name            :       pd_01          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Invalid        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE738600CW6P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       1              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       24             
+        State           :       Online         
+        StateChangeTs   :       1586798015     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S01_PHLE738600CW
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 24
+Available Spare (in %)                                    : 100
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 55994827
+Data Units Written (in 512k byte data unit)               : 6625692
+Number of Host Read Commands                              : 1000590603
+Number of Host Write Commands                             : 92331465
+Controller Busy Time (in minutes)                         : 238
+Number of Power Cycles                                    : 686
+Number of Power On Hours                                  : 5785
+Number of Unsafe Shutdowns                                : 670
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ DISK: pd_02 ] ===========
+The Resource is : pd_02
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme6n1   
+        AsmDiskList     :       |data_02||reco_02|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       2              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       230            
+        HbaPortNum      :       302            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme6n1| 
+        Name            :       pd_02          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Invalid        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE740200626P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       2              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       24             
+        State           :       Online         
+        StateChangeTs   :       1586798015     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S02_PHLE74020062
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 24
+Available Spare (in %)                                    : 100
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 56763682
+Data Units Written (in 512k byte data unit)               : 6641988
+Number of Host Read Commands                              : 1004811667
+Number of Host Write Commands                             : 92610929
+Controller Busy Time (in minutes)                         : 238
+Number of Power Cycles                                    : 780
+Number of Power On Hours                                  : 5816
+Number of Unsafe Shutdowns                                : 764
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ DISK: pd_03 ] ===========
+The Resource is : pd_03
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme8n1   
+        AsmDiskList     :       |data_03||reco_03|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       3              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       148            
+        HbaPortNum      :       403            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme8n1| 
+        Name            :       pd_03          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Partial        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE738600D76P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       3              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       22             
+        State           :       Online         
+        StateChangeTs   :       1586801839     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S03_PHLE738600D7
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 24
+Available Spare (in %)                                    : 100
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 55847175
+Data Units Written (in 512k byte data unit)               : 6526145
+Number of Host Read Commands                              : 1002669937
+Number of Host Write Commands                             : 89987995
+Controller Busy Time (in minutes)                         : 238
+Number of Power Cycles                                    : 686
+Number of Power On Hours                                  : 5810
+Number of Unsafe Shutdowns                                : 670
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ DISK: pd_04 ] ===========
+The Resource is : pd_04
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme1n1   
+        AsmDiskList     :       |data_04||reco_04|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       0              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       28             
+        HbaPortNum      :       904            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme1n1| 
+        Name            :       pd_04          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Invalid        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE738600E36P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       4              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       23             
+        State           :       Online         
+        StateChangeTs   :       1586798015     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S04_PHLE738600E3
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 23
+Available Spare (in %)                                    : 99
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 56073090
+Data Units Written (in 512k byte data unit)               : 6595859
+Number of Host Read Commands                              : 1002107405
+Number of Host Write Commands                             : 91961828
+Controller Busy Time (in minutes)                         : 238
+Number of Power Cycles                                    : 686
+Number of Power On Hours                                  : 5793
+Number of Unsafe Shutdowns                                : 669
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ DISK: pd_05 ] ===========
+The Resource is : pd_05
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme3n1   
+        AsmDiskList     :       |data_05||reco_05|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       1              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       63             
+        HbaPortNum      :       805            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme3n1| 
+        Name            :       pd_05          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Invalid        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE7394005N6P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       5              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       22             
+        State           :       Online         
+        StateChangeTs   :       1586798015     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S05_PHLE7394005N
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 22
+Available Spare (in %)                                    : 100
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 55882194
+Data Units Written (in 512k byte data unit)               : 6606193
+Number of Host Read Commands                              : 1002922309
+Number of Host Write Commands                             : 91384066
+Controller Busy Time (in minutes)                         : 237
+Number of Power Cycles                                    : 678
+Number of Power On Hours                                  : 5785
+Number of Unsafe Shutdowns                                : 663
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ DISK: pd_06 ] ===========
+The Resource is : pd_06
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme7n1   
+        AsmDiskList     :       |data_06||reco_06|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       2              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       231            
+        HbaPortNum      :       306            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme7n1| 
+        Name            :       pd_06          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Invalid        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE7394008A6P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       6              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       22             
+        State           :       Online         
+        StateChangeTs   :       1586798015     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S06_PHLE7394008A
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 22
+Available Spare (in %)                                    : 100
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 56082043
+Data Units Written (in 512k byte data unit)               : 6589434
+Number of Host Read Commands                              : 1005945938
+Number of Host Write Commands                             : 91556055
+Controller Busy Time (in minutes)                         : 238
+Number of Power Cycles                                    : 685
+Number of Power On Hours                                  : 5800
+Number of Unsafe Shutdowns                                : 670
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ DISK: pd_07 ] ===========
+The Resource is : pd_07
+        ActionTimeout   :       1500           
+        ActivePath      :       /dev/nvme5n1   
+        AsmDiskList     :       |data_07||reco_07|
+        AutoDiscovery   :       1              
+        AutoDiscoveryHi :       |data:80:NVD||reco:20:NVD|
+        CheckInterval   :       600            
+        ColNum          :       3              
+        CriticalWarning :       0              
+        DependListOpr   :       add            
+        Dependency      :       |0|            
+        DiskId          :       365cd2e4080865048
+        DiskType        :       NVD            
+        Enabled         :       1              
+        ExpNum          :       149            
+        HbaPortNum      :       407            
+        IState          :       0              
+        Initialized     :       0              
+        IsConfigDepende :       false          
+        ModelNum        :       7335940:ICDPC2DD2ORA6.4T
+        MonitorFlag     :       1              
+        MultiPathList   :       |/dev/nvme5n1| 
+        Name            :       pd_07          
+        NewPartAddr     :       0              
+        OSUserType      :       |userType:Multiuser|
+        PlatformName    :       X7_2_LITE_IAAS 
+        PrevState       :       Invalid        
+        PrevUsrDevName  :
+        SectorSize      :       512            
+        SerialNum       :       PHLE739400866P4OGN
+        Size            :       6401252745216  
+        SlotNum         :       7              
+        SmartDiskWarnin :       0              
+        SmartTemperatur :       22             
+        State           :       Online         
+        StateChangeTs   :       1586798015     
+        StateDetails    :       Good           
+        TotalSectors    :       12502446768    
+        TypeName        :       0              
+        UsrDevName      :       NVD_S07_PHLE73940086
+        VendorName      :       Intel          
+        gid             :       0              
+        mode            :       660            
+        uid             :       0              
+SMART / Health Information :
+----------------------------
+Critical Warning - Available Spare below Threshold        : FALSE
+Critical Warning - Temperature above Threshold            : FALSE
+Critical Warning - Reliability Degraded                   : FALSE
+Critical Warning - Read-Only Mode                         : FALSE
+Critical Warning - Volatile Memory Backup Device Failure  : FALSE
+Temperature (in degrees Celsius)                          : 22
+Available Spare (in %)                                    : 100
+Available Spare Threshold (in %)                          : 10
+Device Life Used (in %)                                   : 0
+Data Units Read (in 512k byte data unit)                  : 43173103
+Data Units Written (in 512k byte data unit)               : 6523108
+Number of Host Read Commands                              : 779157043
+Number of Host Write Commands                             : 91369309
+Controller Busy Time (in minutes)                         : 184
+Number of Power Cycles                                    : 685
+Number of Power On Hours                                  : 5800
+Number of Unsafe Shutdowns                                : 670
+Number of Media Errors                                    : 0
+Number of Error Info Log Entries                          : 0
+=========== [ Storage INFO ] ===========
+==== BEGIN STORAGE DUMP ========
+Host Description: Oracle Corporation:ORACLE SERVER X7-2L
+Total number of controllers: 8
+        Id          = 0
+        Pci Slot    = 900
+        Serial Num  = PHLE739400E06P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:1b:00.00
+        Pci Address = 1b:00.0
+
+        Id          = 1
+        Pci Slot    = 904
+        Serial Num  = PHLE738600E36P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:1c:00.00
+        Pci Address = 1c:00.0
+
+        Id          = 2
+        Pci Slot    = 801
+        Serial Num  = PHLE738600CW6P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:3e:00.00
+        Pci Address = 3e:00.0
+
+        Id          = 3
+        Pci Slot    = 805
+        Serial Num  = PHLE7394005N6P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:3f:00.00
+        Pci Address = 3f:00.0
+
+        Id          = 7
+        Pci Slot    = 403
+        Serial Num  = PHLE738600D76P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:94:00.00
+        Pci Address = 94:00.0
+
+        Id          = 4
+        Pci Slot    = 407
+        Serial Num  = PHLE739400866P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:95:00.00
+        Pci Address = 95:00.0
+
+        Id          = 5
+        Pci Slot    = 302
+        Serial Num  = PHLE740200626P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:e6:00.00
+        Pci Address = e6:00.0
+
+        Id          = 6
+        Pci Slot    = 306
+        Serial Num  = PHLE7394008A6P4OGN
+        Vendor      = Intel
+        Model       = 7335940:ICDPC2DD2ORA6.4T
+        FwVers      = QDV1RF30
+        strId       = nvme:e7:00.00
+        Pci Address = e7:00.0
+
+Total number of expanders: 0
+Total number of PDs: 8
+        /dev/nvme0n1    Intel             NVD 6401gb slot:  0  pci-addr : 1b  7335940:ICDPC2DD2ORA6.4T
+        /dev/nvme2n1    Intel             NVD 6401gb slot:  1  pci-addr : 3e  7335940:ICDPC2DD2ORA6.4T
+        /dev/nvme6n1    Intel             NVD 6401gb slot:  2  pci-addr : e6  7335940:ICDPC2DD2ORA6.4T
+        /dev/nvme8n1    Intel             NVD 6401gb slot:  3  pci-addr : 94  7335940:ICDPC2DD2ORA6.4T
+        /dev/nvme1n1    Intel             NVD 6401gb slot:  4  pci-addr : 1c  7335940:ICDPC2DD2ORA6.4T
+        /dev/nvme3n1    Intel             NVD 6401gb slot:  5  pci-addr : 3f  7335940:ICDPC2DD2ORA6.4T
+        /dev/nvme7n1    Intel             NVD 6401gb slot:  6  pci-addr : e7  7335940:ICDPC2DD2ORA6.4T
+        /dev/nvme5n1    Intel             NVD 6401gb slot:  7  pci-addr : 95  7335940:ICDPC2DD2ORA6.4T
+==== END STORAGE DUMP =========
+=========== [ Storage ERRORS ] ===========
