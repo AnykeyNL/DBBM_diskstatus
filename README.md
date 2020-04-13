@@ -7,3 +7,10 @@ You need to run this script as root inside your baremetal database instance.
 - Login as OPC user
 - run command: sudo su -
 - Now you can run the diskstatus.sh script
+
+# TAGS
+- OCI 
+- Oracle Cloud 
+- Oracle Database
+- Oracld DBCS
+- Baremetal 
